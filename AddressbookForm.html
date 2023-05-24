@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="AddressBookForm.css"/>
+        <title>Address Book</title>
+    </head>
+
+    <body>
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="C:\Users\vinit\OneDrive\Documents\BridgeLabz Assingment Files\HTML\AddressBookWorkshop\assets\assets\images\logo.jpeg" alt="logo here">
+                <div>
+                    <span class="address-text">ADDRESS</span>
+                    <span class="address-text book-text">BOOK</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="form-content">
+            <form class="form" action="#" onsubmit="save(); return false">
+
+                <div class="form-head">
+                    <center>PERSON ADDRESS FORM</center>
+                    <div class="row-content">
+                        <label class="label text" for="name">Name:</label>
+                        <input type="text" class="input" id="name" name="name" placeholder="enter the name.." required>
+                        <error-output class="text-error" for="name"></error-output>
+                    </div>
+
+                    <div class="row-content">
+                        <label class="label text" for="name">Address:</label>
+                        <input type="text" class="input" id="address" name="address" placeholder="enter the address.." required>
+                        <error-output class="address-error" for="address"></error-output>
+                    </div>
+
+
+                    <div class="row-content">
+                        <label class="label text" for="state">State:</label>
+                        <div>
+                            <select  id="state" name="state">
+                                <option value="Maharastra">Maharastra</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Goa">Goa</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row-content">
+                        <label class="label text" for="city">City:</label>
+                        <div>
+                            <select  id="city" name="city">
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Mysure">Mysure</option>
+                                <option value="Panjim">Panjim</option>
+                                <option value="Vasco">Vasco</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row-content">
+                        <div>
+                            <label class="label text" for="zip">ZipCode:</label>
+                            <input type="text" class="input" id="zip" name="zip" placeholder="enter the zipcode.." required>
+                            <error-output class="text-error" for="zip"></error-output>
+                        </div>
+                    </div>
+
+                    <div class="row-content">
+                        <label class="label text" for="phonenumber">PhoneNumber:</label>
+                        <input type="text" class="input" id="phonenumber" name="phonenumber" placeholder="enter the phonenumber.." required>
+                        <error-output class="text-error" for="phonenumber"></error-output>
+                    </div>
+
+                    <div class="row-content">
+                        <div class="button-style">
+                            <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                            <button type="reset" class="resetButton button">Reset</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <script src="Addressbookform.js"></script>
+    </body>
+</html>
