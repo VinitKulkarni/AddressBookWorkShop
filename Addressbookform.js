@@ -49,7 +49,7 @@ class Person {
 }
 
 const save = () => {
-    alert("clicked on submit");
+    alert("save method called");
     let personData = setPersonData();
     //alert(personData._name);
     //console.log(PersonData._address);
@@ -62,6 +62,7 @@ const save = () => {
 };
 
 const setPersonData = () => {
+    alert("set method called");
     let personData = new Person();
 
     personData._name = getInputValueById('#name');
@@ -89,13 +90,4 @@ const createAndStore = (personData) => {
         personList = [personData];
     }
     localStorage.setItem("personList",JSON.stringify(personList));
-}
-
-const resetForm = (personData) => {
-    personData._name = "";
-    personData._address = "";
-    personData._state = "";
-    personData._city = "";
-    personData._zip = "";
-    personData._phoneNumber = "";
 }
